@@ -1,0 +1,72 @@
+:root {
+  --color-bg: rgb(248, 235, 201);              /* Cream background */
+  --color-navbar: rgb(207, 60, 60);            /* Fresh green */
+  --color-navbar-hover: rgb(176, 54, 54);      /* Darker green */
+  --color-accent: rgb(220, 53, 69);            /* Tomato red */
+  --color-highlight: rgb(255, 205, 66);        /* Golden yellow */
+  --color-card-bg: rgb(255, 255, 255);         /* White cards */
+  --color-text: rgb(33, 37, 41);               /* Dark gray text */
+  --color-muted-text: rgb(108, 117, 125);      /* Muted gray text */
+}
+
+/* Background and text */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-navbar) !important;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--color-highlight) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-navbar);
+  border-color: var(--color-navbar);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-navbar-hover);
+  border-color: var(--color-navbar-hover);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: rgb(200, 45, 60); /* Slightly darker tomato red */
+  border-color: rgb(200, 45, 60);
+}
+
+/* Cards and modals */
+.card,
+.modal-content {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-navbar);
+  box-shadow: 0 4px 12px rgba(53, 141, 70, 0.3);
+}
+
+/* Toast */
+.toast-header {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.toast-body {
+  color: var(--color-text);
+}
